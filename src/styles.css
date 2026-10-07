@@ -1564,9 +1564,16 @@ svg {
   .project-topline span:last-child { grid-column: 2; }
   .project-overview { grid-template-columns: 1fr; gap: 24px; padding: 28px 20px; }
   .project-title-row { gap: 13px; align-items: flex-start; }
+  .project-title-row h3 {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
   .project-icon { width: 48px; height: 48px; border-radius: 13px; }
   .project-icon svg { width: 24px; height: 24px; }
-  .project-overview h3 { font-size: clamp(2.65rem, 14vw, 4rem); }
+  .project-overview h3 {
+    font-size: clamp(2.2rem, 10.5vw, 3.1rem);
+    line-height: 0.98;
+  }
   .project-overview p { font-size: 0.92rem; }
   .architecture-flow { display: grid; padding: 0 20px 28px; }
   .architecture-step { display: grid; justify-items: center; }
