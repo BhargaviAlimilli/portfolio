@@ -80,6 +80,10 @@ export function InventoryIcon(props: IconProps) {
   return <svg {...base} {...props}><path d="m4 7 8-4 8 4-8 4-8-4Z" /><path d="m4 7 8 4 8-4v10l-8 4-8-4V7Zm8 4v10" /></svg>
 }
 
+export function BookIcon(props: IconProps) {
+  return <svg {...base} {...props}><path d="M12 5C9 3 6 3 3 4v15c3-1 6-1 9 1 3-2 6-2 9-1V4c-3-1-6-1-9 1Zm0 0v15" /><path d="M6 8c1-.2 2 0 3 .5M6 12c1-.2 2 0 3 .5m6-4c1-.5 2-.7 3-.5m-3 4.5c1-.5 2-.7 3-.5" /></svg>
+}
+
 export function StoreIcon(props: IconProps) {
   return <svg {...base} {...props}><path d="M3 10h18L19 4H5l-2 6Zm1 0v10h16V10M8 20v-6h8v6" /><path d="M3 10a3 3 0 0 0 5 2 3 3 0 0 0 4 0 3 3 0 0 0 4 0 3 3 0 0 0 5-2" /></svg>
 }

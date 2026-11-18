@@ -67,7 +67,7 @@ function App() {
               index="03"
               eyebrow="Selected work"
               title="Systems where product experience meets operational correctness."
-              description="Four case studies demonstrating transferable product engineering across customer experiences, operations, data integrity, integrations, and an applied AI project."
+              description="Five case studies demonstrating transferable product engineering across customer experiences, operations, data integrity, integrations, and applied AI for retail and learning."
             />
             <div className="project-list">
               {projects.map((project) => <ProjectCard key={project.id} project={project} />)}

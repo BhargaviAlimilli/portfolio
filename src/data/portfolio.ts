@@ -134,6 +134,29 @@ export const projects: Project[] = [
     architecture: ['Next.js', 'FastAPI', 'LangGraph', 'PostgreSQL + RAG', 'LLM'],
     variant: 'violet',
   },
+  {
+    id: 'study-mate',
+    number: '05',
+    eyebrow: 'Independent project · AI-powered learning',
+    title: 'Study Mate',
+    dates: 'Personal project',
+    summary:
+      'An AI study assistant that turns personal PDFs into cited answers, summaries, and quizzes, then uses missed questions to guide revision and track topic progress.',
+    role:
+      'Built the full-stack study experience with React and TypeScript, a FastAPI backend, a recoverable PDF indexing pipeline, and a stateful LangGraph tutor workflow.',
+    challenge:
+      'Answers needed traceable source evidence and private, owner-scoped retrieval, while indexing and quiz submissions had to recover safely from failures and retries.',
+    contributions: [
+      'Built PDF question answering and summaries with page-level citations, supporting excerpts, and retained conversation history.',
+      'Implemented Redis/RQ indexing with CPU-based sentence embeddings, owner-scoped Qdrant search, content-hash reuse, and stable vector IDs for retries.',
+      'Developed AI-generated multiple-choice quizzes with deterministic scoring, saved attempts, and targeted revision and topic progress derived from quiz history.',
+      'Added Claude vision for study images, browser voice interaction, and authenticated read-only MCP tools for note search and weak-topic lookup.',
+      'Containerized the app, API, worker, and data services with Docker Compose and configured GitHub Actions for automated tests, frontend builds, and database migration checks.',
+    ],
+    stack: ['React', 'TypeScript', 'Python', 'FastAPI', 'PostgreSQL', 'Qdrant', 'LangGraph', 'Claude', 'Sentence Transformers', 'Redis', 'RQ', 'Docker Compose', 'GitHub Actions', 'MCP'],
+    architecture: ['React', 'FastAPI', 'LangGraph', 'Qdrant retrieval', 'Claude'],
+    variant: 'forest',
+  },
 ]
 
 export const experience = [

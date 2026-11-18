@@ -1,5 +1,5 @@
 import type { Project } from '../data/portfolio'
-import { ArrowUpRightIcon, CartIcon, InventoryIcon, SparkIcon, StoreIcon } from './Icons'
+import { ArrowUpRightIcon, BookIcon, CartIcon, InventoryIcon, SparkIcon, StoreIcon } from './Icons'
 
 function ArchitectureFlow({ nodes }: { nodes: string[] }) {
   return (
@@ -18,6 +18,7 @@ function ProjectIcon({ id }: { id: string }) {
   if (id === 'helius-pos') return <CartIcon />
   if (id === 'helius-ims') return <InventoryIcon />
   if (id === 'aisle-24') return <StoreIcon />
+  if (id === 'study-mate') return <BookIcon />
   return <SparkIcon />
 }
 
